@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, {  } from 'react'
 import logo from '../../../../public/asset/images/logo.png'
 import {  Divider, Drawer, IconButton, InputAdornment, List, TextField } from '@mui/material'
 import { ChevronRight, Search } from '@mui/icons-material'

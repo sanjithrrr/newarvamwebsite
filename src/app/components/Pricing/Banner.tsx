@@ -25,7 +25,7 @@ export default function Banner() {
                     their EAM software solution. With minimal prior experience in managing our
                     assets and maintenance, the team at ARVAM has been incredibly supportive
                     throughout the implementation process. Their hands-on training and the
-                    software's user-friendly design have exceeded our expectations.
+                    software&apos;s user-friendly design have exceeded our expectations.
                     We are excited about the long-term partnership and the opportunities
                     this solution will bring to our operations- Mark Hearney
                     Operations Head-Bay Standard Manufacturing Inc CA USA</h1>

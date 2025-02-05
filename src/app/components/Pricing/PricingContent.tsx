@@ -171,7 +171,7 @@ export default function PricingContent() {
             </div></div>
         <div className='bg-[#F1F9F1] px-14 py-6 flex max-md:flex-wrap gap-5 justify-between  '>
             <div className='w-[40rem]'>
-                <h1 className='text-[28px] font-bold  '>Take charge of your operation's maintenance today!</h1>
+                <h1 className='text-[28px] font-bold  '>Take charge of your operation&apos;s maintenance today!</h1>
                 <h1 className='text-[20px] mt-4' >Collaborate with our implementation team to choose the best plan for your company — and begin engineering uptime outcomes immediately.</h1>
                 <div className='mt-10 mb-8 justify-self-center self-center '>
                     <Link href={''}> <h1 className='text-lg inline bg-black text-white p-4'> Request a Demo</h1></Link>

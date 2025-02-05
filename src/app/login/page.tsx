@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react'
 import landingImage from '../../../public/asset/images/landing_page.png'
 import logo from '../../../public/asset/images/logo.png'
-import { Divider, TextField } from '@mui/material';
+import { TextField } from '@mui/material';
 import Link from 'next/link';
 
 export default function Login() {
