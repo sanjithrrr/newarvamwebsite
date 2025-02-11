@@ -20,7 +20,7 @@ import Link from 'next/link'
 export default function Footer() {
     return (
         <>
-            <div className='bg-[#F9F9F9] text-[18px] ps-12 py-8 pe-6 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  gap-y-6'>
+            {/*<div className='bg-[#F9F9F9] text-[18px] ps-12 py-8 pe-6 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  gap-y-6'>
                 <div className='flex items-center gap-3'>
                     <Avatar className='bg-white h-14 w-14'  >
                         <Image alt='manufacture' src={manufacture} />
@@ -66,7 +66,7 @@ export default function Footer() {
                         <Image alt='manufacture' src={truck} />
                     </Avatar>
                     <h1>Transportation</h1></div>
-            </div>
+    </div> */}
             <div className='bg-black ps-12  p-5 grid grid-cols-1 lg:grid-cols-3 auto-cols-max lg:divide-x gap-5 gap-y-10 divide-white'>
                 <div className='mt-5'>
                     <Image alt='arvam' src={arvam} />
@@ -94,19 +94,23 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className=" grid grid-cols-1 xs:grid-cols-2 gap-y-10 xs:divide-x divide-white">
+                    {/*
                     <div className="mt5">
                         <div className='text-white ps-8'>
                             <h1 className='text-[21px] font-bold '>Support</h1>
                             <div className='text-14px leading-6 mt-1'>
                                 <h1>Get Help</h1>
                                 <h1>Tutorials</h1>
-                                <h1>Team Training</h1>
-                                <h1>Free Courses</h1>
-                                <h1>Sub-Processors</h1>
-                                <h1>Privacy</h1>
+                                
+                                    <h1>Team Training</h1>
+                                    <h1>Free Courses</h1>
+                                    <h1>Sub-Processors</h1>
+                                    <h1>Privacy</h1>
+                                
                             </div>
                         </div>
                     </div>
+                    
                     <div className="mt5">
                         <div className='text-white ps-8'>
                             <h1 className='text-[21px] font-bold '>Solutions</h1>
@@ -122,7 +126,9 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
+                     
                 </div>
+
                 <div className=" grid grid-cols-1  xs:grid-cols-2 gap-y-10 xs:divide-x divide-white">
                     <div className='text-white ps-8'>
                         <h1 className='text-[21px] font-bold '>Resources</h1>
@@ -132,12 +138,13 @@ export default function Footer() {
                             <h1> Blog</h1>
                             <h1>Learning Center</h1>
                             <h1> What is a Work Order?</h1>
-                            <h1>What is Preventive</h1>
-                            <h1>Maintenance?</h1>
-                            <h1>What is Inventory</h1>
-                            <h1> Management?</h1>
+                            <h1>What is Preventive Maintenance?</h1>
+                            <h1></h1>
+                            <h1>What is Inventory Management?</h1>
+                            <h1> </h1>
                         </div>
                     </div>
+                   
                     <div className='text-white ps-4 w-48'>
                         <h1 className='text-[21px] font-bold ps-2 '>Contact us</h1>
                         <div className='flex text-[14px] flex-col mt-3 gap-5'>
@@ -162,7 +169,7 @@ export default function Footer() {
                                 </Avatar>
                                 <h1  >5611 Trinity Lakes Lane Antioch CA 94531</h1></div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

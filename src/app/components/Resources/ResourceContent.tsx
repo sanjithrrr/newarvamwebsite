@@ -183,13 +183,14 @@ export default function ResourceContent() {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#F4F4F4] ps-10 p-6 relative '>
+            {/*<div className='bg-[#F4F4F4] ps-10 p-6 relative '>
                 <h1 className='text-[18px]'>
-                    <span className='text-[21px] font-bold '> CUSTOMERVOICE: </span>
-                    ARVAM EAMhasbeen
-                    achoice of BSMI to manage their
-                    inspection and maintenance processes</h1>
+                    <span className='text-[21px] font-bold '> CUSTOMER VOICE: </span>
+                    ARVAM EAM has been a choice for BSMI to manage their
+                    inspection and maintenance processes
+                </h1>
                     <h1 className='text-[35px] mt-10 font-bold '>VERTICALS</h1>
-            </div></>
+            </div>*/}
+            </>
     )
 }

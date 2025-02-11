@@ -34,13 +34,13 @@ export default function SolutionContent() {
                         <div className='bg-[#E7F7E79C]  h-80 max-xs:w-[19rem] w-[22rem] lg:w-[19rem] xl:w-[22rem] flex justify-center items-center' >
                             <Image alt='dummy' src={image2} />
                         </div>
-                        <h1 className='text-[25px] font-bold px-10 text-center'>Dummy Text</h1>
+                        <h1 className='text-[25px] font-bold px-10 text-center'>Seamless Upgrades</h1>
                     </div>
                     <div className='flex flex-col gap-10 items-center'>
                         <div className='bg-[#F2F3F5]  h-80 max-xs:w-[19rem] w-[22rem] lg:w-[19rem] xl:w-[22rem] flex justify-center items-center' >
                             <Image alt='dummy' src={image4} />
                         </div>
-                        <h1 className='text-[25px] font-bold px-10 text-center'>Dummy Text</h1>
+                        <h1 className='text-[25px] font-bold px-10 text-center'>Compliance</h1>
                     </div>
                     <div className='flex flex-col gap-10 items-center   '>
                         <div className='bg-[#ECF3F7]  h-80 max-xs:w-[19rem] w-[22rem] lg:w-[19rem] xl:w-[22rem] flex justify-center items-center' >
@@ -50,12 +50,13 @@ export default function SolutionContent() {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#F4F4F4] ps-10 p-5 mt-10 '>
-                <h1 className='text-[18px]'><span className='font-bold text-[21px]'>CUSTOMERVOICE:</span> ARVAM EAM has been achoice of BSMI to manage their inspection and maintenance processes</h1>
+
+            {/*<div className='bg-[#F4F4F4] ps-10 p-5 mt-10 '>
+                <h1 className='text-[18px]'><span className='font-bold text-[21px]'>CUSTOMER VOICE:</span> ARVAM EAM has been a choice for BSMI to manage their inspection and maintenance processes</h1>
             </div>
             <div className='ps-10 p-5 '>
-            <h1 className='text-[35px] font-bold '>VERTICALS</h1>
-            </div>
+                <h1 className='text-[35px] font-bold '>VERTICALS</h1>
+            </div>*/}
             </>
     )
 }

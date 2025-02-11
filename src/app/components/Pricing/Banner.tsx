@@ -11,14 +11,15 @@ export default function Banner() {
                 <div>
                     <div className='font-bold text-[50px] leading-[3.7rem]'>
                         <h1 className='text-[#1B6482]   '>ARVAM EAM</h1>
-                        <h1 >More Wrench Time, Less Punch Time</h1> </div>
-                    <h1 className='text-[18px] mt-6 text-justify '>A shop floor friendly EAM solution with latest and greatest technology components to meet modern day demands yet simple in construction and use</h1>
+                        <h1 >Take charge of your operation&apos;s maintenance today!</h1> </div>
+                    <h1 className='text-[18px] mt-6 text-justify '>Collaborate with our implementation team to choose the best plan for your company and begin engineering uptime outcomes immediately.</h1>
                     <div className='mt-12 leading-[3rem]'>
-                        <Link href={''}> <h1 className='text-lg inline bg-black text-white p-4'> Request a Demo</h1></Link>
-                        <h1>Not Ready yet? <Link href={''} className='text-[#319FCB] font-bold'>Sign up for free</Link><KeyboardArrowRight className='-ms-1' /> </h1>
+                        <Link href={'/contact-us'}> <h1 className='text-lg inline bg-black text-white p-4'> Request a Demo</h1></Link>
+                       {/* <h1>Not Ready yet? <Link href={'/contact-us'} className='text-[#319FCB] font-bold'>Sign up for free</Link><KeyboardArrowRight className='-ms-1' /> </h1> */}
                     </div>
                 </div>
                 <Image className='-mt-10 flex mx-auto max-lg:order-first ' alt='banner' src={banner} /></div>
+            {/*
             <div className='bg-[#F9F9F9] ps-10 p-5 relative '>
             <div className="absolute  left-60 right-60 bottom-0 bg-gradient-to-r h-[2.5px] from-transparent via-black/30 to-transparent "></div>
                 <h1 className='text-[18px]' >Bay Standard Manufacturing has partnered with ARVAM to successfully implement
@@ -30,6 +31,7 @@ export default function Banner() {
                     this solution will bring to our operations- Mark Hearney
                     Operations Head-Bay Standard Manufacturing Inc CA USA</h1>
             </div>
+            */}
         </div>
     )
 }

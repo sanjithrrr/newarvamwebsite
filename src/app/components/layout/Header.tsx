@@ -22,7 +22,10 @@ export default function Header() {
     return (
         <>
             <div className='ps-10 max-lg:!hidden  p-5 relative grid grid-flow-col    items-center max-xl:gap-5 gap-10 '>
+                <Link href={'/'} className='link-transparent p-4 text-lg text-black font-bold'>
+                {/*<Link href={'/'} className='bg-[#F4F4F4] p-4 text-lg text-black font-bold'> */}
                 <Image alt='logo' src={logo} width={100} height={100} />
+                </Link>
                 <Divider sx={{ width: 0, borderWidth: '1.5px', marginBottom: '20px' }} orientation="vertical" variant="middle" flexItem />
                 <div className='text-lg font-bold flex xl:gap-6 items-center '>
                     <Link href={'/'}><h1 className={`${pathname === '/' ? 'bg-[#F4F4F4]' : ''} p-4 `}> Products</h1></Link>
@@ -53,12 +56,10 @@ export default function Header() {
                         }}
                     />
 
-                    <Link href={'/contact-us'} className='bg-[#F4F4F4] p-4 text-lg text-black font-bold'>
+                    <Link href={'/contact-us'} className='link-transparent p-4 text-lg text-black font-bold'>
                         Contact Us
                     </Link>
-                    <Link href={'/login'} className='bg-black p-4 text-lg text-white font-bold'>
-                        Log in
-                    </Link></div>
+                    </div>
             </div>
             <div className='ps-10 lg:!hidden  p-5 relative grid grid-flow-col justify-between   items-center max-xl:gap-5 gap-10 '>
                 <Image alt='logo' src={logo} width={100} height={100} />
@@ -87,9 +88,6 @@ export default function Header() {
                     />
                     <Link href={'/contact-us'} className=' max-md:!hidden bg-[#F4F4F4] p-4 text-lg text-black font-bold'>
                         Contact Us
-                    </Link>
-                    <Link href={'/login'} className='  max-md:!hidden bg-black p-4 text-lg text-white font-bold'>
-                        Log in
                     </Link>
                     <IconButton
                         color="inherit"

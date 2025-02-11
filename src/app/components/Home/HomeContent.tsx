@@ -1,6 +1,6 @@
 import React from 'react'
-import mixBlend from '../../../../public/asset/images/mix-blend.png'
-import Image from 'next/image'
+//import mixBlend from '../../../../public/asset/images/mix-blend.png'
+//import Image from 'next/image'
 
 export default function HomeContent() {
     return (
@@ -62,20 +62,20 @@ export default function HomeContent() {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#F4F4F480] ps-10 p-5  '>
+             {/*<div className='bg-[#F4F4F480] ps-10 p-5  '>
                 <h1 className='text-[#319FCB] font-bold text-lg'>Version Stability :</h1>
                 <h1> ARVAM EAM will assure users that frequent upgrades will not shake user
                     stability. User adoption disruption due to frequent upgrades has become a single
                     big impediment in achieving intended results in several facilities and organizations.
                     We will assure that this will not be the case with ours</h1>
             </div>
-            {/* <div className='relative '>
+            <div className='relative '>
                 <div className="relative flex mt-56 justify-center -space-x-[13.2rem]">
                     <div className="mix-blend-multiply shadow-inner bg-pink-100 w-[19rem] h-[19rem]  rounded-full"></div>
                     <div className="mix-blend-multiply shadow-inner -translate-y-40 bg-sky-100 w-[19rem] h-[19rem] rounded-full"> <h1>Planet</h1> </div>
                     <div className="mix-blend-multiply shadow-inner bg-lime-100 w-[19rem] h-[19rem] rounded-full"></div>
                 </div>
-            </div> */}
+            </div> 
             <div className=' grid grid-cols-3 justify-center mt-10 '>
                 <div className='relative'>
                     <div>
@@ -155,7 +155,7 @@ export default function HomeContent() {
             </div >
             <div className='ps-12 p-5 mt-20'>
                 <h1 className='text-[35px] font-bold '>VERTICALS</h1>
-            </div>
+            </div>*/}
         </>
     )
 }
