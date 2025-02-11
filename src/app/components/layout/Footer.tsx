@@ -15,6 +15,7 @@ import phone from '../../../../public/asset/images/phone-call.png'
 import sms from '../../../../public/asset/images/sms.png'
 import timeAndDate from '../../../../public/asset/images/time-and-date.png'
 import location from '../../../../public/asset/images/location.png'
+import email from '../../../../public/asset/images/mail.png'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -70,7 +71,7 @@ export default function Footer() {
             <div className='bg-black ps-12  p-5 grid grid-cols-1 lg:grid-cols-3 auto-cols-max lg:divide-x gap-5 gap-y-10 divide-white'>
                 <div className='mt-5'>
                     <Image alt='arvam' src={arvam} />
-                    <h1 className='font-bold leading-[4.5rem] text-[21px] text-white ms-[10px] '>Sign up for newsletter!</h1>
+                    <h1 className='font-bold leading-[4.5rem] text-[21px] text-white ms-[10px] '>Sign up for newsletter! (Coming Soon!)</h1>
                     <h1 className='font-bold text-[14px] text-white ms-[10px] '>Our weekly newsletter full of inspiration, podcasts,
                         trends & news.</h1>
                     <div className="mt-7 flex flex-wrap items-center gap-5">
@@ -170,6 +171,16 @@ export default function Footer() {
                                 <h1  >5611 Trinity Lakes Lane Antioch CA 94531</h1></div>
                         </div>
                     </div> */}
+                    <div className='text-white ps-4 w-48'>
+                        <h1 className='text-[21px] font-bold ps-2 '>Email</h1>
+                        <div className='flex text-[14px] flex-col mt-3 gap-5'>
+                            <div className='flex items-center gap-3 '>
+                                <Avatar className='bg-white h-8 w-8'  >
+                                    <Image alt='manufacture' src={email} />
+                                </Avatar>
+                                <h1>support@arvamtech.com</h1></div>
+                                </div>
+                    </div>
                 </div>
             </div>
         </>
