@@ -17,7 +17,7 @@ export default function ContactUs() {
             </div>
             <div className='lg:w-[85%] px-5 flex flex-col items-center  shadow-[-6px_0px_10px_-6px_rgba(0,0,0,0.5)] relative py-10 bg-[#F6F9FD] border-1 border-[#EBE8E8]'>
                 <div className="absolute  top-20 bottom-20 left-0 blur-[0.8px]   bg-gradient-to-b w-[2px] from-transparent via-gray-700 to-transparent  "></div>
-                <h1 className='text-[25px] text-center  font-bold' >Contact Us For Cloud-Based ARVAM EAM Solutions</h1>
+                <h1 className='text-[25px] text-center  font-bold' >Contact Us For ARVAM EAM Solutions</h1>
                 <div className='mt-8 ' >
                     <h1 className='text-[18px] mb-1' >First Name<span className='text-red-500' >*</span></h1>
                     <TextField
@@ -33,7 +33,21 @@ export default function ContactUs() {
                         }} />
                 </div>
                 <div className='mt-8 ' >
-                    <h1 className='text-[18px] mb-1' >Email Address</h1>
+                    <h1 className='text-[18px] mb-1' >Last Name<span className='text-red-500' >*</span></h1>
+                    <TextField
+                        placeholder="Last Name"
+                        variant="outlined"
+                        sx={{
+                            '& .MuiOutlinedInput-root': {
+                                borderRadius: '50px',
+                                backgroundColor: 'white',
+                                width: {xs:'250px', sm:'380px'},
+                                height: '38px'
+                            },
+                        }} />
+                </div>
+                <div className='mt-8 ' >
+                    <h1 className='text-[18px] mb-1' >Email Address<span className='text-red-500' >*</span></h1>
                     <TextField
                         placeholder="work@email.com"
                         variant="outlined"
@@ -121,7 +135,7 @@ export default function ContactUs() {
                 </h1>
                 <Link className='flex justify-center mt-10 ' href={''}>
                     <div className="text-white font-bold  text-lg rounded-full text-[18px]  bg-[#000000] py-1 px-10  xs:px-20  ">
-                        Contact Us
+                        Submit
                     </div>
                 </Link>
 
