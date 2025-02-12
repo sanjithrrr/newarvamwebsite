@@ -16,7 +16,7 @@ export default function SolutionContent() {
                         <div className='bg-[#EAF3F7] h-80 max-xs:w-[19rem] w-[22rem] lg:w-[19rem] xl:w-[22rem] flex justify-center items-center ' >
                             <Image alt='quality' src={image1} />
                         </div>
-                        <h1 className='text-[25px] text-center px-10 font-bold'>Quality Performance</h1>
+                        <h1 className='text-[25px] text-center px-10 font-bold'>Predictive Maintenance</h1>
                     </div>
                     <div className='flex flex-col gap-10 items-center '>
                         <div className='bg-[#E7F7E79C]  h-80 max-xs:w-[19rem] w-[22rem] lg:w-[19rem] xl:w-[22rem] flex justify-center items-center' >
@@ -28,7 +28,7 @@ export default function SolutionContent() {
                         <div className='bg-[#E1E2E4]  h-80 max-xs:w-[19rem] w-[22rem] lg:w-[19rem] xl:w-[22rem] flex justify-center items-center' >
                             <Image alt='work-order' src={image3} />
                         </div>
-                        <h1 className='text-[25px] text-center px-10 font-bold'>Work Orders and the  Role of Automation</h1>
+                        <h1 className='text-[25px] text-center px-10 font-bold'>Smart Work Orders</h1>
                     </div>
                     <div className='flex flex-col gap-10 items-center'>
                         <div className='bg-[#E7F7E79C]  h-80 max-xs:w-[19rem] w-[22rem] lg:w-[19rem] xl:w-[22rem] flex justify-center items-center' >
@@ -46,7 +46,7 @@ export default function SolutionContent() {
                         <div className='bg-[#ECF3F7]  h-80 max-xs:w-[19rem] w-[22rem] lg:w-[19rem] xl:w-[22rem] flex justify-center items-center' >
                             <Image alt='software' src={image5} />
                         </div>
-                        <h1 className='text-[25px] font-bold px-10 text-center'>Predictive Maintenance Software</h1>
+                        <h1 className='text-[25px] font-bold px-10 text-center'> Quality Performance</h1>
                     </div>
                 </div>
             </div>
