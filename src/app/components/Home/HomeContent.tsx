@@ -10,11 +10,11 @@ export default function HomeContent() {
                 <div className="grid max-xs:grid-cols-1 max-md:grid-cols-2 grid-cols-4 px-4 ">
                     <div className="grid grid-flow-row auto-rows-max place-items-center relative">
                         <div className="p-5 lg:p-10 rounded-full relative ring-[40px]  lg:ring-[48px] shadow-inner ring-lime-100 mt-20  w-44 h-44 lg:w-52 lg:h-52 flex  items-center justify-center">
-                            <h1 className="text-center font-bold text-[#1B6482] text-xl">Asset Management Made Simple</h1>
+                            <h1 className="text-center font-bold text-[#1B6482] text-2xl">Asset Management Made Simple</h1>
                             <div className="absolute -bottom-[72px] lg:-bottom-[80px] left-1/2 transform -translate-x-1/2 h-8 w-[2px] bg-[#DEE1E5]"></div>
                             <div className="absolute -bottom-[72px] lg:-bottom-[80px] left-1/2 transform -translate-x-1/2 h-3 w-3 rounded-full bg-[#DEE1E5]"></div>
                         </div>
-                        <div className="text-center mt-24 lg:px-12 px-2">
+                        <div className="text-center mt-24 lg:px-12 px-2 text-[22px]">
                             <h1>
                                 With ARVAM EAM learning curve will not be steep making it easy to adopt
                                 by all involved in Inspection and Maintenance
@@ -23,11 +23,11 @@ export default function HomeContent() {
                     </div>
                     <div className="grid grid-flow-row auto-rows-max place-items-center relative me-[14px]">
                         <div className="p-5 lg:p-10 rounded-full relative ring-[40px]  lg:ring-[48px] shadow-inner ring-sky-100 max-md:mt-20 mt-48  w-44 h-44 lg:w-52 lg:h-52 flex  items-center justify-center">
-                            <h1 className="text-center font-bold text-[#1B6482] text-xl">Inspection Effectiveness</h1>
+                            <h1 className="text-center font-bold text-[#1B6482] text-2xl">Inspection Effectiveness</h1>
                             <div className="absolute -bottom-[72px] lg:-bottom-[80px] left-1/2 transform -translate-x-1/2 h-8 w-[2px] bg-[#DEE1E5]"></div>
                             <div className="absolute -bottom-[72px] lg:-bottom-[80px] left-1/2 transform -translate-x-1/2 h-3 w-3 rounded-full bg-[#DEE1E5]"></div>
                         </div>
-                        <div className="text-center mt-24 lg:px-12 px-2">
+                        <div className="text-center mt-24 lg:px-12 px-2 text-[22px]">
                             <h1>
                                 Inspection integration with maintenance will result in Asset monitoring
                                 which will pave way for Asset Performance Management
@@ -36,11 +36,11 @@ export default function HomeContent() {
                     </div>
                     <div className="grid grid-flow-row auto-rows-max place-items-center relative ms-[14px]">
                         <div className="p-5 lg:p-10 rounded-full relative ring-[40px]  lg:ring-[48px] shadow-inner ring-pink-100 max-md:mt-20 mt-48   w-44 h-44 lg:w-52 lg:h-52 flex  items-center justify-center">
-                            <h1 className="text-center font-bold text-[#1B6482] text-xl">Cost Optimization</h1>
+                            <h1 className="text-center font-bold text-[#1B6482] text-2xl">Cost Optimization</h1>
                             <div className="absolute -bottom-[72px] lg:-bottom-[80px] left-1/2 transform -translate-x-1/2 h-8 w-[2px] bg-[#DEE1E5]"></div>
                             <div className="absolute -bottom-[72px] lg:-bottom-[80px] left-1/2 transform -translate-x-1/2 h-3 w-3 rounded-full bg-[#DEE1E5]"></div>
                         </div>
-                        <div className="text-center mt-24 lg:px-12 px-2">
+                        <div className="text-center mt-24 lg:px-12 px-2 text-[22px]">
                             <h1>
                                 Achieving 10-20 reduction in maintenance cost reduction through ARVAM EAM is a certain
                                 outcome for sustained cost effectiveness and performance
@@ -49,11 +49,11 @@ export default function HomeContent() {
                     </div>
                     <div className="grid grid-flow-row auto-rows-max place-items-center relative">
                         <div className="p-5 lg:p-10 rounded-full relative ring-[40px]  lg:ring-[48px] shadow-inner ring-yellow-100 mt-20 w-44 h-44 lg:w-52 lg:h-52 flex  items-center justify-center">
-                            <h1 className="text-center font-bold text-[#1B6482] text-xl">Reliability and Safety</h1>
+                            <h1 className="text-center font-bold text-[#1B6482] text-2xl">Reliability and Safety</h1>
                             <div className="absolute -bottom-[72px] lg:-bottom-[80px] left-1/2 transform -translate-x-1/2 h-8 w-[2px] bg-[#DEE1E5]"></div>
                             <div className="absolute -bottom-[72px] lg:-bottom-[80px] left-1/2 transform -translate-x-1/2 h-3 w-3 rounded-full bg-[#DEE1E5]"></div>
                         </div>
-                        <div className="text-center mt-24 lg:px-12 px-2 max-lg:ps-8">
+                        <div className="text-center mt-24 lg:px-12 px-2 max-lg:ps-8 text-[22px]">
                             <h1>
                                 Reliability and Safety are key pillars in ARVAM EAM. With optimal
                                 asset management process major asset failures and catastrophes can be avoided at all times

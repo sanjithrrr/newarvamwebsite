@@ -8,12 +8,13 @@ import Link from 'next/link'
 export default function Banner() {
     return (
         <div>
-            <div className='grid grid-cols-2 max-lg:grid-cols-1 gap-40 gap-y-10 p-10 pe-5 '>
+            <div className='grid grid-cols-2 max-lg:grid-cols-2 gap-15 gap-y-10 p-10 pe-5 '>
                 <div>
                     <div className='font-bold text-[50px] leading-[3.7rem]'>
                         <h1 className='text-[#1B6482]   '>ARVAM EAM</h1>
-                        <h1 >More Wrench Time, Less Punch Time</h1> </div>
-                    <h1 className='text-[18px] mt-6 text-justify '>A shop floor friendly EAM solution with latest and greatest technology components to meet modern day demands yet simple in construction and use</h1>
+                        <h1 >More Wrench Time, Less Punch Time</h1> 
+                    </div>
+                    <h1 className='text-[22px] mt-6 text-justify '>A shop floor friendly Enterprise Asset Management (EAM) solution with latest and greatest technology components to meet modern day demands yet simple in construction and use</h1>
                     <div className='mt-12 leading-[3rem]'>
                         <Link href={'/contact-us'}> <h1 className='text-lg inline bg-black text-white p-4'> Request a Demo</h1></Link>
                     </div>

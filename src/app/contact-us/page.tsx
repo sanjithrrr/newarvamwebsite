@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image'
 import React from 'react'
 import logo from '../../../public/asset/images/logo.png'
@@ -7,9 +9,43 @@ import flag from '../../../public/asset/images/flag.png'
 import { InputAdornment, TextField } from '@mui/material'
 import Link from 'next/link'
 
-export default function ContactUs() {
+
+const ContactUs =() => {
+    const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        // Handle the form data here
+        // Send an email with the form data
+        const formData = {
+            firstName: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="firstName"]')?.value || '',
+            lastName: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="lastName"]')?.value || '',
+            email: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="email"]')?.value || '',
+            companyName: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="companyName"]')?.value || '',
+            phoneNumber: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="phoneNumber"]')?.value || '',
+            heardAboutUs: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="heardAboutUs"]')?.value || '',
+            numberOfUsers: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="numberOfUsers"]')?.value || '',
+        };
+        
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Email sent successfully:', data);
+        })
+        .catch((error) => {
+            console.error('Error sending email:', error);
+        });
+        console.log('Form submitted');
+    }
+
     return (
-        <div className='flex p-10 gap-10 max-lg:flex-wrap '>
+ 
+            <form onSubmit={onSubmit}>
+            <div className='flex p-10 gap-10 max-lg:flex-wrap '>
             <div className='w-full lg:w-[15%]'>
                 <Link href={'/'}>
                     <Image alt='logo' src={logo} />
@@ -133,13 +169,15 @@ export default function ContactUs() {
                     unsubscribe, as well as our privacy practices and commitment to
                     protecting your privacy, please review our Privacy Policy.
                 </h1>
-                <Link className='flex justify-center mt-10 ' href={''}>
+                <button className='flex justify-center mt-10 ' type="submit">
                     <div className="text-white font-bold  text-lg rounded-full text-[18px]  bg-[#000000] py-1 px-10  xs:px-20  ">
                         Submit
                     </div>
-                </Link>
-
+                </button>
             </div>
-        </div>
-    )
+        </div> 
+        </form>
+    );
 }
+
+export default ContactUs;

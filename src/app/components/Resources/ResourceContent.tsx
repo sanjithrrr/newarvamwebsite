@@ -21,13 +21,13 @@ export default function ResourceContent() {
                 <h1 className='text-[35px] font-bold py-10' >Key Features of ARVAM EAM:</h1>
                 <div className='my-10 grid md:grid-cols-2 lg:grid-cols-3 items-start gap-16 lg:gap-x-5 xl:gap-x-16  ' >
                     <div className='bg-[#F9F9F9] max-xs:w-[18rem] max-xs:h-[20.5rem]  w-[20rem] h-[17.5rem] ' >
-                        <div className='bg-[#E7E7E7] ps-4 p-2 flex justify-between items-center '>
+                        <div className='bg-[#CCE4F2] ps-4 p-2 flex justify-between items-center '>
                             <h1 className='text-[21px] font-bold'>Preventive Maintenance</h1>
                             <Avatar className='bg-white h-10 w-10'  >
                                 <Image alt='web-management' src={webManagement} />
                             </Avatar>
                         </div>
-                        <div className='text-[18px] p-4 pe-8 '>
+                        <div className='text-[20px] p-4 pe-8 '>
                             Our radically different Preventive maintenance design ensures the
                             avoidance of mundane Preventive Maintenance processes that often lead to
                             over maintenance and ignoring key
@@ -41,14 +41,14 @@ export default function ResourceContent() {
                                 <Image alt='phone' src={phone} />
                             </Avatar>
                         </div>
-                        <div className='text-[18px] p-4 pe-8'>
+                        <div className='text-[20px] p-4 pe-8'>
                             ARVAM EAM mobile will help field maintenance operatives to
                             handle inspection and maintenance activities without the
                             need to operate their computers
                         </div>
                     </div>
                     <div className='bg-[#F9F9F9] w-[20rem] max-xs:w-[18rem] h-[17.5rem] ' >
-                        <div className='bg-[#EAEAEA] ps-4 p-2 flex justify-between items-center '>
+                        <div className='bg-[#CCE4F2] ps-4 p-2 flex justify-between items-center '>
                             <h1 className='text-[21px] font-bold'>Inventory and Stores</h1>
                             <Avatar className='bg-white h-10 w-10'  >
                                 <Image alt='checklist' src={checklist} />
@@ -61,56 +61,56 @@ export default function ResourceContent() {
                         </div>
                     </div>
                     <div className='bg-[#F9F9F9] max-xs:w-[18rem] max-xs:h-[15.5rem] w-[20rem]  lg:h-[14rem] h-[14rem] md:h-[17.5rem] ' >
-                        <div className='bg-[#D4E7F3] ps-4 p-2 flex justify-between items-center '>
+                        <div className='bg-[#CCE4F2] ps-4 p-2 flex justify-between items-center '>
                             <h1 className='text-[21px] font-bold'>Work Order</h1>
                             <Avatar className='bg-white h-10 w-10'  >
                                 <Image alt='testing' src={testing} />
                             </Avatar>
                         </div>
-                        <div className='text-[18px] p-4 pe-8 '>
+                        <div className='text-[20px] p-4 pe-8 '>
                             Core module where all inspection and maintenance activities are operationalized.
                             It is a one stop shop for updating and completing maintenance activities
                         </div>
                     </div>
                     <div className='bg-[#F9F9F9] max-xs:w-[18rem] w-[20rem] h-[14rem] ' >
-                        <div className='bg-[#EAEAEA] ps-4 p-2 flex justify-between items-center '>
+                        <div className='bg-[#CCE4F2] ps-4 p-2 flex justify-between items-center '>
                             <h1 className='text-[21px] font-bold'>Internet of Things</h1>
                             <Avatar className='bg-white h-10 w-10'  >
                                 <Image alt='cloud' src={cloud} />
                             </Avatar>
                         </div>
-                        <div className='text-[18px] p-4 pe-8 '>
+                        <div className='text-[20px] p-4 pe-8 '>
                             Our EAM has ability to integrate with sensors mounted on critical assets
                             and process critical inspection and maintenance activities
                         </div>
                     </div>
                     <div className='bg-[#F9F9F9] max-xs:w-[18em] w-[20rem] h-[14rem] ' >
-                        <div className='bg-[#D4E7F3] ps-4 p-2 flex justify-between items-center '>
+                        <div className='bg-[#CCE4F2] ps-4 p-2 flex justify-between items-center '>
                             <h1 className='text-[21px] font-bold'>External Integration</h1>
                             <Avatar className='bg-white h-10 w-10'  >
                                 <Image alt='integration' src={integration} />
                             </Avatar>
                         </div>
-                        <div className='text-[18px] p-4 pe-8 '>
+                        <div className='text-[20px] p-4 pe-8 '>
                             ARVAM EAM can integrate with third party systems
                             in bi-directional or unidirectional
                             modes for specific business functions
                         </div>
                     </div>
                     <div className='bg-[#F9F9F9] max-xs:w-[18rem] w-[20rem] h-[14rem] ' >
-                        <div className='bg-[#ECECEC] ps-4 p-2 flex justify-between items-center '>
+                        <div className='bg-[#CCE4F2] ps-4 p-2 flex justify-between items-center '>
                             <h1 className='text-[21px] font-bold'>Dashboards</h1>
                             <Avatar className='bg-white h-10 w-10'  >
                                 <Image alt='integration' src={dashboard} />
                             </Avatar>
                         </div>
-                        <div className='text-[18px] p-4 pe-8 '>
+                        <div className='text-[20px] p-4 pe-8 '>
                             User specific dashboards for monitoring key indices. It is an excellent
                             oversight tool for all levels of maintenance and manufacturing personnel
                         </div>
                     </div>
                     <div className='bg-[#F9F9F9] max-xs:w-[18rem] w-[20rem] h-[14rem] ' >
-                        <div className='bg-[#DBEAF3] ps-4 p-2 flex justify-between items-center '>
+                        <div className='bg-[#CCE4F2] ps-4 p-2 flex justify-between items-center '>
                             <h1 className='text-[21px] font-bold'>Work Request</h1>
                             <Avatar className='bg-white h-10 w-10'  >
                                 <Image alt='integration' src={interview} />
@@ -122,25 +122,25 @@ export default function ResourceContent() {
                         </div>
                     </div>
                     <div className='bg-[#F9F9F9] max-xs:w-[18rem] w-[20rem] h-[14rem] lg:h-[14rem] md:h-[29rem] ' >
-                        <div className='bg-[#ECECEC] ps-4 p-2 flex justify-between items-center '>
+                        <div className='bg-[#CCE4F2] ps-4 p-2 flex justify-between items-center '>
                             <h1 className='text-[21px] font-bold'>Reports</h1>
                             <Avatar className='bg-white h-10 w-10'  >
                                 <Image alt='integration' src={report} />
                             </Avatar>
                         </div>
-                        <div className='text-[18px] p-4 pe-8 '>
+                        <div className='text-[20px] p-4 pe-8 '>
                             Custom reports that can be developed based on specific
                             needs of the facility or enterprise
                         </div>
                     </div>
                     <div className='bg-[#F9F9F9] max-xs:w-[18rem] w-[20rem] h-[29rem] ' >
-                        <div className='bg-[#D4E7F3] ps-4 p-2 flex justify-between items-center '>
+                        <div className='bg-[#CCE4F2] ps-4 p-2 flex justify-between items-center '>
                             <h1 className='text-[21px] font-bold'>Failure Prevention</h1>
                             <Avatar className='bg-white h-10 w-10'  >
                                 <Image alt='integration' src={warning} />
                             </Avatar>
                         </div>
-                        <div className='text-[18px] p-4 pe-8 '>
+                        <div className='text-[20px] p-4 pe-8 '>
                             Breakdowns are undesirable events that must be prevented or
                             managed in such a way that they do not re-occur. Our Failure
                             Prevention module assists inspection, maintenance and reliability
@@ -150,13 +150,13 @@ export default function ResourceContent() {
                         </div>
                     </div>
                     <div className='bg-[#F9F9F9] max-xs:w-[18rem] max-xs:h-[32.5rem] w-[20rem] h-[29rem] ' >
-                        <div className='bg-[#EAEAEA] ps-4 p-2 flex justify-between items-center '>
+                        <div className='bg-[#CCE4F2] ps-4 p-2 flex justify-between items-center '>
                             <h1 className='text-[21px] font-bold'>Inspection</h1>
                             <Avatar className='bg-white h-10 w-10'  >
                                 <Image alt='integration' src={qualityControl} />
                             </Avatar>
                         </div>
-                        <div className='text-[18px] p-4 pe-8 '>
+                        <div className='text-[20px] p-4 pe-8 '>
                             Inspection of assets is greatly emphasized in ARVAM EAM.
                             Predictive maintenance need not always have sophisticated
                             predictive maintenance paraphernalia. Simple visual checks,
@@ -168,13 +168,13 @@ export default function ResourceContent() {
                         </div>
                     </div>
                     <div className='bg-[#F9F9F9] max-xs:w-[18rem] w-[20rem] h-[29rem] ' >
-                        <div className='bg-[#EAEAEA] ps-4 p-2 flex justify-between items-center '>
+                        <div className='bg-[#CCE4F2] ps-4 p-2 flex justify-between items-center '>
                             <h1 className='text-[21px] font-bold'>What you achieve</h1>
                             <Avatar className='bg-white h-10 w-10'  >
                                 <Image alt='integration' src={trophy} />
                             </Avatar>
                         </div>
-                        <div className='text-[18px] p-4 pe-8 flex flex-col gap-5 '>
+                        <div className='text-[20px] p-4 pe-8 flex flex-col gap-5 '>
                             <p >10-15% Reduction in Maintenance Expenses Annually</p>
                             <p >0 Accidents due to Asset Failures</p>
                             <p >20% reduction in inventory</p>

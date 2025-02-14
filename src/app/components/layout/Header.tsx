@@ -28,10 +28,10 @@ export default function Header() {
                 </Link>
                 <Divider sx={{ width: 0, borderWidth: '1.5px', marginBottom: '20px' }} orientation="vertical" variant="middle" flexItem />
                 <div className='text-lg font-bold flex xl:gap-6 items-center '>
-                    <Link href={'/'}><h1 className={`${pathname === '/' ? 'bg-[#F4F4F4]' : ''} p-4 `}> Products</h1></Link>
-                    <Link href={'/solutions'}><h1 className={`${pathname === '/solutions' ? 'bg-[#F4F4F4] ' : ''} p-4 `}>Solutions</h1></Link>
-                    <Link href={'/resources'}><h1 className={`${pathname === '/resources' ? 'bg-[#F4F4F4] ' : ''} p-4 `}>Resources</h1></Link>
-                    <Link href={'/pricing'}> <h1 className={`${pathname === '/pricing' ? 'bg-[#F4F4F4] ' : ''} p-4 `}>Pricing</h1></Link>
+                    <Link href={'/'}><h1 className={`${pathname === '/' ? 'bg-[#F4F4F4]' : ''} p-4 text-xl`}> Products</h1></Link>
+                    <Link href={'/solutions'}><h1 className={`${pathname === '/solutions' ? 'bg-[#F4F4F4] ' : ''} p-4 text-xl`}>Solutions</h1></Link>
+                    <Link href={'/resources'}><h1 className={`${pathname === '/resources' ? 'bg-[#F4F4F4] ' : ''} p-4 text-xl`}>Resources</h1></Link>
+                    <Link href={'/pricing'}> <h1 className={`${pathname === '/pricing' ? 'bg-[#F4F4F4] ' : ''} p-4 text-xl`}>Pricing</h1></Link>
                 </div>
                 <div className='flex items-center gap-3'>
                     <TextField
@@ -56,7 +56,7 @@ export default function Header() {
                         }}
                     />
 
-                    <Link href={'/contact-us'} className='link-transparent p-4 text-lg text-black font-bold'>
+                    <Link href={'/contact-us'} className='link-transparent p-4 text-xl text-black font-bold'>
                         Contact Us
                     </Link>
                     </div>
@@ -86,7 +86,7 @@ export default function Header() {
                             }
                         }}
                     />
-                    <Link href={'/contact-us'} className=' max-md:!hidden bg-[#F4F4F4] p-4 text-lg text-black font-bold'>
+                    <Link href={'/contact-us'} className=' max-md:!hidden bg-[#F4F4F4] p-4 text-xl text-black font-bold'>
                         Contact Us
                     </Link>
                     <IconButton
