@@ -9,7 +9,7 @@ export default function SolutionContent() {
     return (
         <>
             <div className=' ps-10 p-5 '>
-                <h1 className='text-[35px] mt-10 font-bold '>Improve Your Company’s Maintenance Management Processes?</h1>
+                <h1 className='text-[35px] mt-10 font-bold '>Improve Your Company’s Maintenance Management Processes</h1>
                 <h1 className='text-[21px] mt-9 text-[#1B6482] font-bold '>These ARVAM EAM articles provide guidance for improving maintenance and asset management practices.</h1>
                 <div className='my-20 grid md:grid-cols-2 lg:grid-cols-3  items-start gap-16 gap-y-32 ' >
                     <div className='flex flex-col gap-10 items-center '>
