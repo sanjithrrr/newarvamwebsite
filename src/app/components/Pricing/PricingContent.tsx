@@ -22,14 +22,15 @@ export default function PricingContent() {
                                 <h1 className="text-[18px] font-bold flex items-center gap-1">
                                     $ <span className="text-[31px]">50</span>
                                 </h1>
-                                <h1 className="text-[15px] font-bold leading-[2px]">month</h1>
+                                <h1 className="text-[12px] font-bold leading-[2px]">per user/month</h1>
                             </div>
                         </div>
-                        <h1 className='font-bold text-[18px] text-[#7B7575] my-5 text-center '>Price per user</h1>
+                        {/*<h1 className='font-bold text-[18px] text-[#7B7575] my-5 text-center '>1-5 Users</h1>*/}
+                      
                         <a href ='/contact-us'>
                         <button className=' bg-[#F4F4F4] px-6 flex mx-auto py-2   border border-[#E5E5E5]' ><h1 className='text-[18px] font-bold' >Get started</h1></button>
                         </a>
-                        <h1 className='text-[18px] mt-7 px-5 h-28 '>Standalone operations can add value to their existing maintenance tools for a competitive edge.</h1>
+                        {/*<h1 className='text-[20px] mt-7 px-5 h-28 '>Standalone operations can add value to their existing maintenance tools for a competitive edge.</h1>*/}
                         
                         <ul className="  font-bold my-8 text-[16px]  ">
                             <li className='flex gap-2 my-2'>
@@ -69,8 +70,10 @@ export default function PricingContent() {
                                 Purchase
                             </li>
                             <li className='flex gap-2 my-3'>
-                                <Image alt='settings' src={cross} />
-                                IIoT
+                            <div className='flex-shrink-0 w-6 h-6'>
+                                <Image alt='settings' src={cross} className='w-full h-full object-contain'/>
+                            </div>
+                                IIoT (Industrial Internet of Things)
                             </li>
                             <li className='flex gap-2 my-3'>
                                 <Image alt='settings' src={cross} />
@@ -88,14 +91,14 @@ export default function PricingContent() {
                                 <h1 className="text-[18px] font-bold flex items-center gap-1">
                                     $ <span className="text-[31px]">75</span>
                                 </h1>
-                                <h1 className="text-[15px] font-bold leading-[2px]">month</h1>
+                                <h1 className="text-[12px] font-bold leading-[2px]">per user/month</h1>
                             </div>
                         </div>
-                        <h1 className='font-bold text-[18px] text-[#7B7575] my-5 text-center '>Price per user</h1>
+                        {/*<h1 className='font-bold text-[18px] text-[#7B7575] my-5 text-center '>1-10 Users</h1> */}
                         <a href ='/contact-us'>
                         <button className=' bg-[#F4F4F4] px-6 flex mx-auto py-2   border border-[#E5E5E5]' ><h1 className='text-[18px] font-bold' >Get started</h1></button>
                         </a>
-                        <h1 className='text-[18px] mt-7 px-5 h-28 '>Automate maintenance and engineer uptime at more than one facility. </h1>
+                        {/*<h1 className='text-[20px] mt-7 px-5 h-28 justify-center'>Automate maintenance and engineer uptime at more than one facility. </h1> */}
             
                         <ul className="  font-bold my-8 text-[16px]  ">
                         <li className='flex gap-2 my-2'>
@@ -135,8 +138,10 @@ export default function PricingContent() {
                                 Purchase
                             </li>
                             <li className='flex gap-2 my-3'>
-                                <Image alt='settings' src={cross} />
-                                IIoT
+                            <div className='flex-shrink-0 w-6 h-6'>
+                                <Image alt='settings' src={cross} className='w-full h-full object-contain'/>
+                            </div>
+                                IIoT (Industrial Internet of Things)
                             </li>
                             <li className='flex gap-2 my-3'>
                                 <Image alt='settings' src={cross} />
@@ -154,15 +159,14 @@ export default function PricingContent() {
                                 <h1 className="text-[18px] font-bold flex items-center gap-1">
                                     $ <span className="text-[31px]">100</span>
                                 </h1>
-                                <h1 className="text-[15px] font-bold leading-[2px]">month</h1>
+                                <h1 className="text-[12px] font-bold leading-[2px]">per user/month</h1>
                             </div>
                         </div>
-                        <h1 className='font-bold text-[18px] text-[#7B7575] my-5 text-center '>Price per user</h1>
+                        {/*<h1 className='font-bold text-[18px] text-[#7B7575] my-5 text-center '>Price per user</h1>*/}
                         <a href ='/contact-us'>
                         <button className=' bg-[#F4F4F4] px-6 flex mx-auto py-2   border border-[#E5E5E5]' ><h1 className='text-[18px] font-bold' >Get started</h1></button>
                         </a>
-                        <h1 className='text-[18px] mt-7 px-5 h-28 '>Large enterprise-level firms can consolidate all operations under one complete maintenance solution.</h1>
-                        
+                        {/*<h1 className='text-[20px] mt-7 px-5 h-28'>Large enterprise-level firms can consolidate all operations under one complete maintenance solution.</h1> */}
                         <ul className="  font-bold my-8 text-[16px]  ">
                         <li className='flex gap-2 my-2'>
                                 <Image alt='settings' src={checkMark} />
@@ -201,8 +205,10 @@ export default function PricingContent() {
                                 Purchase
                             </li>
                             <li className='flex gap-2 my-3'>
-                                <Image alt='settings' src={checkMark} />
-                                IIoT
+                            <div className='flex-shrink-0 w-6 h-6'>
+                                <Image alt='settings' src={checkMark} className='w-full h-full object-contain'/>
+                            </div>
+                                IIoT (Industrial Internet of Things)
                             </li>
                             <li className='flex gap-2 my-3'>
                                 <Image alt='settings' src={checkMark} />
