@@ -2,29 +2,40 @@
 
 import Image from 'next/image'
 import React from 'react'
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 import logo from '../../../public/asset/images/logo.png'
 //import map from '../../../public/asset/images/map.png'
 //import arvam from '../../../public/asset/images/arvam1.png'
 import flag from '../../../public/asset/images/flag.png'
-import { InputAdornment, TextField } from '@mui/material'
+import { TextField, InputAdornment } from '@mui/material'
 import Link from 'next/link'
 
 
 const ContactUs =() => {
+    const router = useRouter();
+    const [formData, setFormData] = React.useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        companyName: '',
+        phoneNumber: '',
+        heardAboutUs: '',
+        numberOfUsers: '',
+    });
+
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setFormData({
+            ...formData,
+            [event.target.name]: event.target.value,
+        });
+    };
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         // Handle the form data here
         // Send an email with the form data
-        const formData = {
-            firstName: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="firstName"]')?.value || '',
-            lastName: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="lastName"]')?.value || '',
-            email: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="email"]')?.value || '',
-            companyName: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="companyName"]')?.value || '',
-            phoneNumber: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="phoneNumber"]')?.value || '',
-            heardAboutUs: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="heardAboutUs"]')?.value || '',
-            numberOfUsers: (e.target as HTMLFormElement).querySelector<HTMLInputElement>('input[name="numberOfUsers"]')?.value || '',
-        };
-        
+
+        //console.log("FormData->", formData);
         fetch('/api/contact', {
             method: 'POST',
             headers: {
@@ -35,9 +46,23 @@ const ContactUs =() => {
         .then(response => response.json())
         .then(data => {
             console.log('Email sent successfully:', data);
+            setFormData({
+                firstName: '',
+                lastName: '',
+                email: '',
+                companyName: '',
+                phoneNumber: '',
+                heardAboutUs: '',
+                numberOfUsers: '',
+              });
+            alert('Thanks for your interest! Our team will reach out to you soon...');
+
+            router.push('/');
         })
         .catch((error) => {
             console.error('Error sending email:', error);
+            console.error('Error sending email details:', error.response ? error.response.data : error.message);
+            alert('Error submitting form. Please try again.');
         });
         console.log('Form submitted');
     }
@@ -57,6 +82,8 @@ const ContactUs =() => {
                 <div className='mt-8 ' >
                     <h1 className='text-[18px] mb-1' >First Name<span className='text-red-500' >*</span></h1>
                     <TextField
+                        name="firstName"
+                        value={formData.firstName}
                         placeholder="First Name"
                         variant="outlined"
                         sx={{
@@ -66,11 +93,14 @@ const ContactUs =() => {
                                 width: {xs:'250px', sm:'380px'},
                                 height: '38px'
                             },
-                        }} />
+                        }} 
+                        onChange={handleChange}/>
                 </div>
                 <div className='mt-8 ' >
                     <h1 className='text-[18px] mb-1' >Last Name<span className='text-red-500' >*</span></h1>
                     <TextField
+                        name="lastName"
+                        value={formData.lastName}
                         placeholder="Last Name"
                         variant="outlined"
                         sx={{
@@ -80,11 +110,14 @@ const ContactUs =() => {
                                 width: {xs:'250px', sm:'380px'},
                                 height: '38px'
                             },
-                        }} />
+                        }} 
+                        onChange={handleChange}/>
                 </div>
                 <div className='mt-8 ' >
                     <h1 className='text-[18px] mb-1' >Email Address<span className='text-red-500' >*</span></h1>
                     <TextField
+                        name = "email"
+                        value={formData.email}
                         placeholder="work@email.com"
                         variant="outlined"
                         sx={{
@@ -94,11 +127,15 @@ const ContactUs =() => {
                                 width: {xs:'250px', sm:'380px'},
                                 height: '38px'
                             },
-                        }} />
+                        
+                        }}
+                        onChange={handleChange} />
                 </div>
                 <div className='mt-8 ' >
                     <h1 className='text-[18px] mb-1' >Company Name<span className='text-red-500' >*</span></h1>
                     <TextField
+                        name="companyName"
+                        value={formData.companyName}
                         placeholder="Enter your company name"
                         variant="outlined"
                         sx={{
@@ -108,11 +145,14 @@ const ContactUs =() => {
                                 width: {xs:'250px', sm:'380px'},
                                 height: '38px'
                             },
-                        }} />
+                        }} 
+                        onChange={handleChange}/>
                 </div>
                 <div className='mt-8 ' >
                     <h1 className='text-[18px] mb-1' >Phone Number<span className='text-red-500' >*</span></h1>
                     <TextField
+                        name="phoneNumber"
+                        value={formData.phoneNumber}
                         placeholder="+1"
                         variant="outlined"
                         sx={{
@@ -132,11 +172,14 @@ const ContactUs =() => {
                                 ),
                             }
                         }}
+                        onChange={handleChange}
                     />
                 </div>
                 <div className='mt-8 ' >
                     <h1 className='text-[18px] mb-1' >How did you hear about us?<span className='text-red-500' >*</span></h1>
                     <TextField
+                        name="heardAboutUs"
+                        value={formData.heardAboutUs}
                         placeholder="Please share"
                         variant="outlined"
                         sx={{
@@ -146,11 +189,14 @@ const ContactUs =() => {
                                 width: {xs:'250px', sm:'380px'},
                                 height: '38px'
                             },
-                        }} />
+                        }} 
+                        onChange={handleChange}/>
                 </div>
                 <div className='mt-8 ' >
                     <h1 className='text-[18px] mb-1' >Number of Users<span className='text-red-500' >*</span></h1>
                     <TextField
+                        name="numberOfUsers"
+                        value={formData.numberOfUsers}
                         placeholder="1"
                         variant="outlined"
                         sx={{
@@ -160,7 +206,8 @@ const ContactUs =() => {
                                 width: {xs:'250px', sm:'380px'},
                                 height: '38px'
                             },
-                        }} />
+                        }} 
+                        onChange={handleChange}/>
                 </div>
                 <h1 className=' mt-8 text-[16px] px-5 sm:px-16 md:px-32 lg:px-16 xl:px-28 ' >
                     ARVAM EAM needs the contact information you provide to us to

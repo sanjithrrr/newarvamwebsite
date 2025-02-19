@@ -8,7 +8,9 @@ export default function Resources() {
   return (<>
         <Header />
         <Banner/>
-        <ResourceContent/>
+        <div className="mb-20"> {/* Add this wrapper div with margin-bottom */}
+        <ResourceContent />
+      </div>
         <Footer />
       </>
       )

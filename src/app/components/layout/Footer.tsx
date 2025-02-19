@@ -69,10 +69,10 @@ export default function Footer() {
                     <h1>Transportation</h1></div>
     </div> */}
             <div className='bg-black ps-12  p-5 grid grid-cols-1 lg:grid-cols-3 auto-cols-max lg:divide-x gap-5 gap-y-10 divide-white'>
-                <div className='mt-5'>
+                <div className='mt-5 lg:col-span-2'>
                     <Image alt='arvam' src={arvam} />
                     <h1 className='font-bold leading-[4.5rem] text-[21px] text-white ms-[10px] '>Sign up for newsletter! (Coming Soon!)</h1>
-                    <h1 className='font-bold text-[14px] text-white ms-[10px] '>Our weekly newsletter full of inspiration, podcasts,
+                    <h1 className='font-bold text-[16px] text-white ms-[10px] '>Our weekly newsletter full of inspiration, podcasts,
                         trends & news.</h1>
                     <div className="mt-7 flex flex-wrap items-center gap-5">
                         <TextField
@@ -82,7 +82,7 @@ export default function Footer() {
                                 '& .MuiOutlinedInput-root': {
                                     borderRadius: '50px',
                                     backgroundColor: 'white',
-                                    width: '210px',
+                                    width: '250px',
                                     height: '33px'
                                 },
                             }}

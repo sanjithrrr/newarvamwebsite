@@ -21,7 +21,7 @@ export default function Header() {
 
     return (
         <>
-            <div className='ps-10 max-lg:!hidden  p-5 relative grid grid-flow-col    items-center max-xl:gap-5 gap-10 '>
+            <div className='ps-25 max-lg:!hidden p-5 relative grid grid-flow-col items-center max-xl:gap-5 gap-10 '>
                 <Link href={'/'} className='link-transparent p-4 text-lg text-black font-bold'>
                 {/*<Link href={'/'} className='bg-[#F4F4F4] p-4 text-lg text-black font-bold'> */}
                 <Image alt='logo' src={logo} width={100} height={100} />

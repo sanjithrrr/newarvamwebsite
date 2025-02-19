@@ -8,7 +8,7 @@ import Link from 'next/link'
 export default function Banner() {
     return (
         <div>
-            <div className='grid grid-cols-2 max-lg:grid-cols-2 gap-15 gap-y-10 p-10 pe-5 '>
+            <div className='grid grid-cols-2 max-lg:grid-cols-2 gap-10 gap-y-10 p-10 pe-5 '>
                 <div>
                     <div className='font-bold text-[50px] leading-[3.7rem]'>
                         <h1 className='text-[#1B6482]   '>ARVAM EAM</h1>
