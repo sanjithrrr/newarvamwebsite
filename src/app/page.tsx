@@ -1,15 +1,24 @@
-import React from 'react'
-import Header from './components/layout/Header'
-import Banner from './components/Home/Banner'
-import HomeContent from './components/Home/HomeContent'
-import Footer from './components/layout/Footer'
+import { Container } from "@/components/Container";
+import { Hero } from "@/components/Hero";
+import { SectionTitle } from "@/components/SectionTitle";
+import { Benefits } from "@/components/Benefits";
+import { Video } from "@/components/Video";
+import { Testimonials } from "@/components/Testimonials";
 
+import { benefitOne, benefitTwo } from "@/components/data";
 export default function Home() {
-  return (<>
-    <Header />
-    <Banner />
-    <HomeContent />
-    <Footer />
-  </>
-  )
+  return (
+    <Container>
+      <Hero />
+      <SectionTitle
+        preTitle=""
+        title="Testimonials"
+      >
+      </SectionTitle>
+
+      <Testimonials />
+
+      <Benefits data={benefitOne} />
+    </Container>
+  );
 }

@@ -2,14 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
-  html {
-    color-scheme: light;
+  html { 
+    color-scheme: light; 
   }
   body {
-    @apply dark:bg-trueGray-800;
+    @apply dark:bg-trueGray-900;
   }
 }
-
